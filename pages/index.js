@@ -43,9 +43,21 @@ const Index = () => (
                 </Link>{' '}
             </li>
 
-            <li> Local State Management QUERY {' '}
-                <Link href="/LSMquery">
-                    <a>Query-Apollo-Cache</a>
+            <li> Caching{' '}
+                <Link href="/caching">
+                    <a>Local State Management</a>
+                </Link>{' '} readQuery, writeData, resetStore
+            </li>
+
+            <li> Error Handling {' '}
+                <Link href="/errorHandling">
+                    <a> Using Query graphQLErrors</a>
+                </Link>{' '}
+            </li>
+
+            <li> Pagination {' '}
+                <Link href="/pagination">
+                    <a>Using Query fetchMore, updateQuery, fetchMoreResult</a>
                 </Link>{' '}
             </li>
         </p>

@@ -38,7 +38,7 @@ const PostListQuery = () => (
     <Query 
         query={GET_POSTS}
         skip={skip}
-        variables={ variables }>
+        variables={ variables } onCompleted={data => console.log(data.allPosts)}>
       {({ data: {allPosts, _allPostsMeta}, loading, error, fetchMore }) => {
         if (loading) return "Loading...";
         if (error) return <ErrorMessage message="Error loading posts." />
@@ -77,6 +77,7 @@ const PostListQuery = () => (
                 ) : (
                   ''
                 )}
+
               </Container>
             )
           }

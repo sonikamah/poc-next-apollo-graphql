@@ -1,6 +1,6 @@
 const Header = () => (
     <div>
-        <h1>Explore Next JS, Axios, Apollo, GraphQL</h1>
+        <h1><i>Explore Next JS, Axios, Apollo, GraphQL</i></h1>
     </div>
 )
 
